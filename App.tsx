@@ -1,10 +1,18 @@
 import React from 'react';
+import {StatusBar} from 'react-native';
 import { SignIn } from './src/screens/SignIn';
 // import { Home } from './src/screens/Home';
 
 export default function App() {
   return (
-    <SignIn />
+    <>
+      <StatusBar
+        barStyle="light-content"
+        backgroundColor="transparent"
+        translucent
+      />
+      <SignIn />
+    </>
   );
 }
 
