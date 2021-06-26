@@ -1,4 +1,5 @@
 import { StyleSheet }from 'react-native';
+import { RFValue } from 'react-native-responsive-fontsize';
 import { theme } from '../../global/styles/theme';
 
 export const styles = StyleSheet.create({
@@ -9,27 +10,27 @@ export const styles = StyleSheet.create({
   },
   image:{
     width: '100%',
-    height: 360
+    height: RFValue(360)
   },
 
   content: {
-    marginTop: -40,
-    paddingHorizontal: 50
+    marginTop: RFValue(-40),
+    paddingHorizontal: RFValue(50)
   },
   title: {
     color: theme.colors.heading,
     textAlign: 'center',
-    fontSize:40,
-    marginBottom:16,
+    fontSize: RFValue(40),
+    marginBottom: RFValue(16),
     fontFamily: theme.fonts.title700,
-    lineHeight:40
+    lineHeight:RFValue(40)
   },
   subtitle: {
     color: theme.colors.heading,
     textAlign: 'center',
-    fontSize:15,
-    marginBottom:44,
+    fontSize:RFValue(15),
+    marginBottom:RFValue(44),
     fontFamily: theme.fonts.title500,
-    lineHeight:25
+    lineHeight:RFValue(25)
   }
 }) 

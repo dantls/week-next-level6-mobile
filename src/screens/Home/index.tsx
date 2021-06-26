@@ -1,40 +1,13 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  Image
-} from 'react-native';
+import { View } from 'react-native';
+import { Profile } from '../../components/Profile';
 
-import { styles } from './styles';
+import {styles} from './styles';
 
 export function Home(){
   return(
-    <>
-      <View style={styles.container}>
-          
-            <View style={styles.profile}>
-              <Image 
-                source={{
-                  uri:"https://avatars.githubusercontent.com/u/51554360?v=4"
-                }}
-                style={styles.avatar}
-              />
-              <View >
-                <Text style={styles.greeting}>
-                  Olá,
-                </Text>
-                <Text style={styles.username}>
-                  Danilo
-                </Text>
-              </View>
-              <Text style={styles.text}>
-                Hoje é dia de vitória
-              </Text>
-            </View>
-            
-
-      
-      </View>
-    </>
+    <View style={styles.container}>
+     <Profile />
+    </View>
   )
 }
